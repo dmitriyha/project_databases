@@ -5,7 +5,6 @@
 			require('pageTitle.php');
 			setTitle(basename(__FILE__));
 		?>
-		
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<?php require('style.php');?>
 	</head>
@@ -19,7 +18,7 @@
 		<div id="text">
 			
 			<p id="text">
-				text goes here lol
+				Insert code to browse by publisher or letter
 			</p>
 		</div>
 	</body>
