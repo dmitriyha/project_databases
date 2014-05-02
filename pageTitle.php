@@ -1,7 +1,7 @@
 <?php
 	function setTitle($file){
 		echo '<title>';
-		if($file == 'home.php'){
+		if($file == 'index.php'){
 			echo 'Home';
 		}
 		else if($file == 'browse.php'){

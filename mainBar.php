@@ -3,11 +3,11 @@
 	function setTabs($file){
 		echo'<div id="mainBar"><ul>';
 		
-		if($file =='home.php'){
-			echo '<li><a href="home.php" class="active">Home</a></li>';
+		if($file =='index.php'){
+			echo '<li><a href="index.php" class="active">Home</a></li>';
 		}
 		else{
-			echo '<li><a href="home.php">Home</a></li>';
+			echo '<li><a href="index.php">Home</a></li>';
 		}
 		
 		if($file =='browse.php'){
