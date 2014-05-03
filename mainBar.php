@@ -4,10 +4,10 @@
 		echo'<div id="mainBar"><ul>';
 		
 		if($file =='index.php'){
-			echo '<li><a href="index.php" class="active">Home</a></li>';
+			echo '<li><a href="." class="active">Home</a></li>';
 		}
 		else{
-			echo '<li><a href="index.php">Home</a></li>';
+			echo '<li><a href=".">Home</a></li>';
 		}
 		
 		if($file =='browse.php'){

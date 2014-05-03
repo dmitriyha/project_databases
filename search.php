@@ -16,9 +16,12 @@
 			setTabs(basename(__FILE__));
 		?>
 		<div id="text">
-			
 			<p id="text">
-				insert serch results here
+				<?php
+					require('search_algorithm.php');
+					search($_GET['search'],$_GET['start']);
+					
+				?>
 			</p>
 		</div>
 	</body>

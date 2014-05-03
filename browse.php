@@ -16,9 +16,12 @@
 			setTabs(basename(__FILE__));
 		?>
 		<div id="text">
-			
 			<p id="text">
-				Insert code to browse by publisher or letter
+				<?php
+					require('search_algorithm.php');
+					search("a",0);
+					
+				?>
 			</p>
 		</div>
 	</body>

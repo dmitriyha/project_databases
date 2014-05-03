@@ -145,10 +145,66 @@
 		font-weight:bold;
 	}
 	#text{
-		position:relative;
+		position:absolute;
 		top:+175px;
 		left:+10%;
 		width:90%;
+	}
+	#text.box{
+		width:220px;
+		padding:3px;
+		margin:0px;
+		position:relative;
+		top:0px;
+		left:0px;
+		width:90%;
+		
+		/*generated with a program*/
+		background-color:#f0c911;
+		border-radius: 5px 5px 5px 5px;
+		text-indent:0px;
+		border:1px solid #e65f44;
+		display:inline-block;
+		color:#c92200;
+		font-family:Arial;
+		font-size:15px;
+		font-weight:bold;
+		font-style:normal;
+		line-height:35px;
+		text-decoration:none;
+		text-align:left;
+		text-shadow:1px 1px 0px #ded17c;
+		/*end of generated code*/
+	}
+	#text.searchNav{
+		width:220px;
+		padding:3px;
+		margin:0px;
+		position:relative;
+		top:0px;
+		left:0px;
+		width:90%;
+		
+		/*generated with a program*/
+		background-color:#f0c911;
+		border-radius: 5px 5px 5px 5px;
+		text-indent:0px;
+		border:1px solid #e65f44;
+		display:inline-block;
+		color:#c92200;
+		font-family:Arial;
+		font-size:15px;
+		font-weight:bold;
+		font-style:normal;
+		line-height:35px;
+		text-decoration:none;
+		text-align:center;
+		text-shadow:1px 1px 0px #ded17c;
+		/*end of generated code*/
+	}
+	#text a{
+		color:#c92200;
+		padding:2px;
 	}
 	#text p{
 		position:absolute;
