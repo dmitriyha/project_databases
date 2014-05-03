@@ -3,7 +3,7 @@
 		$dbh = new PDO('mysql:host=localhost;dbname=proj_databases', "root");
 		
 		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title");
-		if($serch==null){
+		if($search==null){
 			$stmt = $dbh->prepare("SELECT * FROM `book`");
 		}
 		$stmt->bindParam(':title', $search);
