@@ -18,7 +18,9 @@
 		<div id="text">
 			
 			<p id="text">
-				This is the databases project webapp!
+				<div id="text" class="box">
+					This is the databases project webapp!
+				</div>
 			</p>
 		</div>
 	</body>

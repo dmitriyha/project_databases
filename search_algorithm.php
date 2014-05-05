@@ -1,6 +1,6 @@
 <?php
 	function search($search,$start){
-		$dbh = new PDO('mysql:host=localhost;dbname=proj_databases', "root");
+		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username'],$GLOBALS ['password']);
 		
 		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title");
 		if($search==null){

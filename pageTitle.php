@@ -1,4 +1,5 @@
 <?php
+	require ("members.php");
 	function setTitle($file){
 		echo '<title>';
 		if($file == 'index.php'){

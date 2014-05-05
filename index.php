@@ -19,7 +19,9 @@
 		<div id="text">
 			
 			<p id="text">
-				text goes here lol
+				<div id="text" class="box">
+					text goes here lol
+				</div>
 			</p>
 		</div>
 	</body>

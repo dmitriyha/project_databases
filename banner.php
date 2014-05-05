@@ -1,3 +1,5 @@
+
+
 <div id="banner">
 	<img id="banner" src="book.jpg">
 	<form id="banner" method="get" action="search.php">

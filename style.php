@@ -146,7 +146,7 @@
 	}
 	#text{
 		position:absolute;
-		top:+175px;
+		top:+190px;
 		left:+10%;
 		width:90%;
 	}
