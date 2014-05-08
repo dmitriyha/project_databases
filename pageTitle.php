@@ -18,5 +18,7 @@
 			echo 'Enter a proper page title';
 		}
 		echo '</title>';
+		
+		
 	}
 ?>

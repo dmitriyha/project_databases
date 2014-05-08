@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
    //Check to see if the username AND password MATCHES the username AND password in the DB 
    else 
    { 
-      $query = mysqli_query($con,"SELECT * FROM members WHERE username = '$user' and password = '$pass'") or die("Can't reach DB."); 
+      $query = mysqli_query($con,"SELECT * FROM members WHERE fname = '$user' and password = '$pass'") or die("Can't reach DB."); 
       $count = mysqli_num_rows($query); 
        
       if($count == 1){ 
@@ -52,6 +52,18 @@ if(isset($_POST['submit']))
 ?> 
 
 <html> 
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div class="title">
+   <h1>Welcome to our library login page!</h1>
+</div>
+
+<body class="cuerpo">
+   
+
+
 <table width="300" align="center" cellpadding="0" cellspacing="1" border="1px solid black"> 
 
 <tr> 
@@ -79,7 +91,7 @@ if(isset($_POST['submit']))
 <tr> 
 <td></td> 
 <td></td> 
-<td><input type="submit" name="submit" value="Login"></td> 
+<td><input class="submit" type="submit" name="submit" value="Login"></td> 
 </tr> 
 
 </table> 
@@ -87,5 +99,6 @@ if(isset($_POST['submit']))
 </form> 
 </tr> 
 </table> 
+</body>
 
 </html> 

@@ -8,7 +8,8 @@ require "config.php";
 
 //Check to see if the user is logged in. 
 if(isset($_SESSION['username'])){ 
-   echo "Hello ".$_SESSION['username'].", you are logged in. <br /> This is the member's page! Nothing here :(. <a href='logout.php'>Click Here </a>to log out.";
+   echo "Hello ".$_SESSION['username'].", you are logged in. <br /> This the member's page! Nothing here :(. <a href='logout.php'>Click Here </a>to log out.";
+	echo basename(__FILE__);
 } 
 
 else{ 
