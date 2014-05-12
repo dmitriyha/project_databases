@@ -4,10 +4,19 @@
 		<title>Page Template</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<style type="text/css">
+			
+			
+			div#banner{
+				position:fixed;
+				top:0px;
+				left:0px;
+				background:white;
+			}
+			
 			#banner{
 				float:left;
 				width:100%;
-				height:110px;
+				height:120px;
 				border-bottom:4px solid #ffffff;
 				overflow:hidden;
 				position:relative;
@@ -93,7 +102,10 @@
 				text-shadow:1px 1px 0px #ded17c;
 				/*end of generated code*/
 			}
-			
+			div#mainBar{
+				position:fixed;
+				top:120px;
+			}
 			#mainBar {
 				float:left;
 				width:100%;
@@ -149,11 +161,16 @@
 				background:#bd9a00;
 				font-weight:bold;
 			}
+			div#text{
+				overflow:hidden;
+				z-index:-1;
+			}
 			#text{
 				position:absolute;
 				top:+175px;
 				left:+10%;
 				width:90%;
+				overflow:hidden;
 			}
 			#text.box{
 				width:220px;
@@ -208,6 +225,15 @@
 		<div id="text">
 			
 			<p id="text">
+				<div id="text" class=box>
+					text here<br>lol<br>lol<br>lol
+				</div>
+				<div id="text" class=box>
+					text here<br>lol<br>lol<br>lol
+				</div>
+				<div id="text" class=box>
+					text here<br>lol<br>lol<br>lol
+				</div>
 				<div id="text" class=box>
 					text here<br>lol<br>lol<br>lol
 				</div>

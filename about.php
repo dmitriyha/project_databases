@@ -6,7 +6,7 @@
 			setTitle(basename(__FILE__));
 		?>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<?php require('style.php');?>
+		<?php require('style.css');?>
 	</head>
 
 	<body>

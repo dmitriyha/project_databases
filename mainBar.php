@@ -11,10 +11,10 @@
 		}
 		
 		if($file =='browse.php'){
-			echo '<li><a href="browse.php" class="active">Browse</a></li>';
+			echo '<li><a href="browse.php?start=0" class="active">Browse</a></li>';
 		}
 		else{
-			echo '<li><a href="browse.php">Browse</a></li>';
+			echo '<li><a href="browse.php?start=0">Browse</a></li>';
 		}
 		if($file =='about.php'){
 			echo '<li><a href="about.php" class="active">About</a></li>';

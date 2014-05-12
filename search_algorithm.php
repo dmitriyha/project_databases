@@ -1,6 +1,6 @@
 <?php
-	function search($search,$start){
-		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username'],$GLOBALS ['password']);
+	function search($search,$start,$file){
+		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username']);
 		
 		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title");
 		if($search==null){
@@ -32,13 +32,13 @@
 		echo '<div id="text" class="searchNav">';
 		
 		if($start>0){
-			echo '<a href="search.php?search='.$search.'&start='.($start-10).'">&ltPrev</a>';
+			echo '<a href="'.$file.'?search='.$search.'&start='.($start-10).'">&ltPrev</a>';
 		}
 		
 		$i=1;
 		while($i<=$pages){
 			if(!((($start/10)+1) == $i)){
-				echo '<a href="search.php?search='.$search.'&start='.(($i-1)*10).'">'. $i .'</a>';
+				echo '<a href="'.$file.'?search='.$search.'&start='.(($i-1)*10).'">'. $i .'</a>';
 			}
 			else{
 				echo '<a>'.$i.'</a>';
@@ -47,7 +47,7 @@
 		}
 		
 		if(!(($start+10)>$max)){
-			echo '<a href="search.php?search='.$search.'&start='.($start+10).'">Next&gt</a>';
+			echo '<a href="'.$file.'?search='.$search.'&start='.($start+10).'">Next&gt</a>';
 		}
 		
 		echo '</div>';
