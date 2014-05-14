@@ -1,15 +1,16 @@
 
 <?php 
 
-session_start(); 
+
 require "config.php"; //Connection Script
 
 //Check to see if the user is logged in. 
-if(isset($_SESSION['username'])){ 
-   header("location: members.php"); //isset check to see if a variables has been 'set' 
-} 
 
 
+$page=basename(__FILE__);
+require('head.php');
+
+ 
 
 if(isset($_POST['submit'])) 
 { 
@@ -39,7 +40,7 @@ if(isset($_POST['submit']))
       if($count == 1){ 
          //YES WE FOUND A MATCH! 
          $_SESSION['username'] = $user; //Create a session for the user! 
-         header ("location: members.php"); 
+		 header("Location: .");
       } 
        
       else{ 
@@ -51,54 +52,54 @@ if(isset($_POST['submit']))
 
 ?> 
 
-<html> 
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	</head>
+	
+	<body>
+		<?php 
+			require('banner.php');
+			require('mainBar.php');
+			setTabs(basename(__FILE__));
+		?>
+		<div id="text">
+			<p id="text">
+				<div id="text" class="box">
+					<table width="300" align="center" cellpadding="0" cellspacing="1" border="1px solid black">
 
-<div class="title">
-   <h1>Welcome to our library login page!</h1>
-</div>
+					<tr>
+					<form name="register" method="post" action="login.php">
+					<td>
 
-<body class="cuerpo">
-   
+					<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 
+					<tr>
+					<td colspan="3"><strong><center>Login </center></strong></td>
+					</tr>
 
-<table width="300" align="center" cellpadding="0" cellspacing="1" border="1px solid black"> 
+					<tr>
+					<td width="78">Username</td>
+					<td width="6">:</td>
+					<td width="294"><input name="user" type="text" id="user"></td>
+					</tr>
 
-<tr> 
-<form name="register" method="post" action="login.php"> 
-<td> 
+					<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td><input name="pass" type="password" id="pass"></td>
+					</tr>
 
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+					<tr>
+					<td></td>
+					<td></td>
+					<td><input type="submit" name="submit" value="Login"></td>
+					</tr>
 
-<tr> 
-<td colspan="3"><strong><center>Login </center></strong></td> 
-</tr> 
-
-<tr> 
-<td width="78">Username</td> 
-<td width="6">:</td> 
-<td width="294"><input name="user" type="text" id="user"></td> 
-</tr> 
-
-<tr> 
-<td>Password</td> 
-<td>:</td> 
-<td><input name="pass" type="password" id="pass"></td> 
-</tr> 
-
-<tr> 
-<td></td> 
-<td></td> 
-<td><input class="submit" type="submit" name="submit" value="Login"></td> 
-</tr> 
-
-</table> 
-</td> 
-</form> 
-</tr> 
-</table> 
-</body>
-
-</html> 
+					</table>
+					</td>
+					</form>
+					</tr>
+					</table> 
+				</div>
+			</p>
+		</div>
+	</body>
+</html>

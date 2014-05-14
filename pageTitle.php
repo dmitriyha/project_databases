@@ -1,24 +1,12 @@
 <?php
-	require ("members.php");
 	function setTitle($file){
 		echo '<title>';
 		if($file == 'index.php'){
-			echo 'Home';
-		}
-		else if($file == 'browse.php'){
-			echo 'Browse';
-		}
-		else if($file == 'search.php'){
-			echo 'Search';
-		}
-		else if($file == 'about.php'){
-			echo 'About';
+			echo 'Home - Review-a-book';
 		}
 		else{
-			echo 'Enter a proper page title';
+			echo ucfirst(substr($file, 0, strpos($file, "."))).' - Review-a-book';
 		}
 		echo '</title>';
-		
-		
 	}
 ?>
