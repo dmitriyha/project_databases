@@ -26,7 +26,7 @@ if(isset($_POST['submit']))
    //Check to see if the username AND password MATCHES the username AND password in the DB 
    else 
    { 
-      $query = mysqli_query($con,"SELECT * FROM members WHERE fname = '$user' and password = '$pass'") or die("Can't reach DB."); 
+      $query = mysqli_query($con,"SELECT * FROM members WHERE user = '$user' and password = '$pass'") or die("Can't reach DB."); 
       $count = mysqli_num_rows($query); 
        
       if($count == 1){ 
