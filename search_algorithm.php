@@ -14,9 +14,9 @@
 		$finalResult=$start+10;
 		$pages=ceil($max/10);
 		
-		while($i<$max){
+		while($i<$finalResult){
 			$row=$stmt->fetch();
-			if($start<=$i && $finalResult>$i){
+			if($start<=$i && $finalResult>$i && $i<$max){
 				echo '<div id="text" class="box">';
 				echo '<b>Title: </b>'.$row['Title'].'<br>';
 				echo '<b>Publisher: </b>'.$row['Publisher'].'<br>';
@@ -24,7 +24,7 @@
 				echo '<b>Category: </b>'.$row['Category'].'<br>';
 				echo '<b>ISBN: </b>'.$row['ISBN'].'<br>';
 				echo '<b>Year: </b>'.$row['Year'].'<br>';
-				echo '<b>Price: </b>'.$row['Price'].' e<br>';
+				echo '<b>Price: </b>'.$row['Price'].' &#8364<br>';
 				echo '</div>';
 			}
 			$i++;

@@ -12,47 +12,7 @@ require('head.php');
 
  
 
-if(isset($_POST['submit'])) 
-{ 
-   //Variables from the table 
-   $user  = $_POST['user']; 
-   $pass  = $_POST['pass']; 
-       
-   //Prevent MySQL Injections 
-   $user  = stripslashes($user); 
-   $pass  = stripslashes($pass); 
-    
-   $user  = mysqli_real_escape_string($con, $user); 
-   $pass  = mysqli_real_escape_string($con, $pass); 
-    
-   //Check to see if the user left any space empty! 
-   if($user == "" || $pass == "") 
-   { 
-      echo "Please fill in all the information!"; 
-   } 
-    
-   //Check to see if the username AND password MATCHES the username AND password in the DB 
-   else 
-   { 
-      $query = mysqli_query($con,"SELECT * FROM members WHERE fname = '$user' and password = '$pass'") or die("Can't reach DB."); 
-      $count = mysqli_num_rows($query); 
-       
-      if($count == 1){ 
-         //YES WE FOUND A MATCH! 
-         $_SESSION['username'] = $user; //Create a session for the user! 
-		 header("Location: .");
-      } 
-       
-      else{ 
-         echo "Username and Password do not match, please try again"; 
-      } 
-   } 
-    
-} 
-
 ?> 
-
-	</head>
 	
 	<body>
 		<?php 
@@ -66,7 +26,7 @@ if(isset($_POST['submit']))
 					<table width="300" align="center" cellpadding="0" cellspacing="1" border="1px solid black">
 
 					<tr>
-					<form name="register" method="post" action="login.php">
+					<form name="register" method="post" action="loginCheck.php">
 					<td>
 
 					<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
@@ -92,7 +52,16 @@ if(isset($_POST['submit']))
 					<td></td>
 					<td><input type="submit" name="submit" value="Login"></td>
 					</tr>
-
+					<?php
+						if(isset($_GET['error'])){
+							if($_GET['error']==1){
+								echo'<td colspan="3"><strong><center>Fill all fields please </center></strong></td>';
+							}
+							else if($_GET['error']==2){
+								echo'<td colspan="3"><strong><center>Username or password wrong </center></strong></td>';
+							}
+						}
+					?>
 					</table>
 					</td>
 					</form>

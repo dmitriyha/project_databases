@@ -1,9 +1,10 @@
 
 <?php 
+	require('config.php');
 	$page=basename(__FILE__);
 	require('head.php');
 ?>
-	</head>
+
 	<body>
 		<?php 
 			require('banner.php');

@@ -1,9 +1,10 @@
 
-<?php 
-	$page=basename(__FILE__);
-	require('head.php');
-?>
-	</head>
+
+	<?php 
+		require('config.php');
+		$page=basename(__FILE__);
+		require('head.php');
+	?>
 	
 	<body>
 		<?php 

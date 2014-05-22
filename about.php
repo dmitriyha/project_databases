@@ -3,7 +3,6 @@
 	$page=basename(__FILE__);
 	require('head.php');
 ?>
-	</head>
 
 	<body>
 		<?php 

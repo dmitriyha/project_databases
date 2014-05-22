@@ -22,7 +22,28 @@
 		else{
 			echo '<li><a href="about.php">About</a></li>';
 		}
+		
+		
+		if (!isset($_SESSION['username'])){
+			if($file =='login.php'){
+				echo '<li><a href="about.php" class="active">Log In</a></li>';
+			}
+			else{
+				echo '<li><a href="login.php">Log In</a></li>';
+			}
+			if($file =='register.php'){
+				echo '<li><a href="register.php" class="active">Register</a></li>';
+			}
+			else{
+				echo '<li><a href="register.php">Register</a></li>';
+			}
+		}
+		else{
+			echo '<li><a href="logout.php">Log Out</a></li>';
+			
+		}
 		echo'</ul></div>';
+		
 	}
 	
 ?>

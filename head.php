@@ -8,7 +8,7 @@
 			session_start(); 
 		
 		
-			if(isset($_SESSION['username']) && $GLOBALS['page']==login.php){ 
+			if(isset($_SESSION['username']) && ($GLOBALS['page']=='login.php' || $GLOBALS['page']=='register.php')){ 
 			   header("Location: ."); //isset check to see if a variables has been 'set' 
 			   echo'was here';
 			}
@@ -16,4 +16,4 @@
 		<?php require('style.css');?>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		
-	
+	</head>

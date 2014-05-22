@@ -1,13 +1,10 @@
 
 <?php 
 
-session_start(); 
-require "config.php"; 
-session_destroy(); 
+	session_start(); 
+	require "config.php"; 
+	session_destroy(); 
 
 
-
-header( 'Location: .' ) ;
-
-
+	header( 'Location: .' ) ;
 ?> 
