@@ -26,12 +26,20 @@
 				echo '<b>Year: </b>'.$row['Year'].'<br>';
 				echo '<b>Price: </b>'.$row['Price'].' &#8364<br>';
 				echo '<b>Average Raring: </b>'.$row['avgRating'].'<br>';
+				echo '<table cellpadding="5" cellspacing="1"><tr><td>';
+				echo '<form name="review" method="post" action="view_Reviews.php">
+					<input name="bookid" type="hidden" id="bookid" value="'.$row['bookid'].'">
+					<input type="submit" name="submit" value="View Reviews">
+					</form>';
+				
+				echo '</td>';
 				if(isset($_SESSION['username'])){
-					echo '<form name="review" method="post" action="review.php">
+					echo '<td><form name="review" method="post" action="review.php">
 					<input name="bookid" type="hidden" id="bookid" value="'.$row['bookid'].'">
 					<input type="submit" name="submit" value="Review">
-					</form>';
+					</form></td>';
 				}
+				echo '</table></tr>';
 				echo '</div>';
 			}
 			$i++;

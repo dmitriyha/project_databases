@@ -5,7 +5,7 @@
 			echo 'Home - Review-a-book';
 		}
 		else{
-			echo ucfirst(substr($file, 0, strpos($file, "."))).' - Review-a-book';
+			echo str_replace("_"," ",ucfirst(substr($file, 0, strpos($file, ".")))).' - Review-a-book';
 		}
 		echo '</title>';
 	}

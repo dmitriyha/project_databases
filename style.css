@@ -190,6 +190,11 @@
 		text-align:left;
 		text-shadow:1px 1px 0px #ded17c;
 		/*end of generated code*/
+		
+	
+	}
+	#text.box form{
+		width:100px;
 	}
 	#text.searchNav{
 		width:220px;
