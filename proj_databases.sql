@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2014 at 02:22 PM
+-- Generation Time: Jun 03, 2014 at 02:35 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `userid` int(2) NOT NULL AUTO_INCREMENT,
   `Password` varchar(8) DEFAULT NULL,
   `user` varchar(30) NOT NULL,
-  `user_type` varchar(4) NOT NULL DEFAULT 'user',
+  `user_type` varchar(5) NOT NULL DEFAULT 'user',
   `banned` tinyint(1) NOT NULL DEFAULT '0',
   `fname` varchar(8) DEFAULT NULL,
   `lname` varchar(12) DEFAULT NULL,
