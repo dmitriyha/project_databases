@@ -24,7 +24,7 @@
 		}
 		
 		
-		if (!isset($_SESSION['username'])){
+		if (!isset($_SESSION['username']) && !isset($_SESSION['type'])){
 			if($file =='login.php'){
 				echo '<li><a href="about.php" class="active">Log In</a></li>';
 			}
@@ -39,6 +39,14 @@
 			}
 		}
 		else{
+			if($_SESSION['type']=="admin"){
+				if($file =='createAdmin.php'){
+					echo '<li><a href="createAdmin.php" class="active">Create special user</a></li>';
+				}
+				else{
+					echo '<li><a href="createAdmin.php">Create special user</a></li>';
+				}
+			}
 			echo '<li><a href="logout.php">Log Out</a></li>';
 			
 		}
