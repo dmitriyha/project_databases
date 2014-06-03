@@ -10,7 +10,9 @@
 		
 			if(isset($_SESSION['username']) && ($GLOBALS['page']=='login.php' || $GLOBALS['page']=='register.php')){ 
 			   header("Location: ."); //isset check to see if a variables has been 'set' 
-			   echo'was here';
+			}
+			if(!isset($_SESSION['username']) && ($GLOBALS['page']=='review.php')){ 
+			   header("Location: ."); //isset check to see if a variables has been 'set' 
 			}
 		?>
 		<?php require('style.css');?>

@@ -28,11 +28,13 @@ if(isset($_POST['submit']))
    { 
       $query = mysqli_query($con,"SELECT * FROM members WHERE user = '$user' and password = '$pass'") or die("Can't reach DB."); 
       $count = mysqli_num_rows($query); 
-       
+      $row = mysqli_fetch_row($query);
+	  echo $row[3];
       if($count == 1){ 
          //YES WE FOUND A MATCH! 
          $_SESSION['username'] = $user; //Create a session for the user! 
-		 header("Location: .");
+		 $_SESSION['type']=$row[3];
+		 //header("Location: .");
       } 
        
       else{ 

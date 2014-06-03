@@ -1,6 +1,6 @@
 <?php
 	function search($search,$start,$file){
-		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username']);
+		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username'],$GLOBALS['password']);
 		
 		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title");
 		if($search==null){
@@ -25,6 +25,13 @@
 				echo '<b>ISBN: </b>'.$row['ISBN'].'<br>';
 				echo '<b>Year: </b>'.$row['Year'].'<br>';
 				echo '<b>Price: </b>'.$row['Price'].' &#8364<br>';
+				echo '<b>Average Raring: </b>'.$row['avgRating'].'<br>';
+				if(isset($_SESSION['username'])){
+					echo '<form name="review" method="post" action="review.php">
+					<input name="bookid" type="hidden" id="bookid" value="'.$row['bookid'].'">
+					<input type="submit" name="submit" value="Review">
+					</form>';
+				}
 				echo '</div>';
 			}
 			$i++;
