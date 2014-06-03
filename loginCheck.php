@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
          //YES WE FOUND A MATCH! 
          $_SESSION['username'] = $user; //Create a session for the user! 
 		 $_SESSION['type']=$row[3];
-		 //header("Location: .");
+		 header("Location: .");
       } 
        
       else{ 
