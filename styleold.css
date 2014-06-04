@@ -6,14 +6,6 @@
 		background:white;
 	}
 	
-	body{
-		background-image:  url(image.jpg);
-    		background-size:   cover;                      /* <------ */
-    		background-repeat: repeat;
-		background-attachment: fixed;
-
-	}
-
 	#banner{
 		float:left;
 		width:100%;
@@ -44,7 +36,7 @@
 		height:31px;
 		
 		/*generated with a program*/
-		background-color:#dddddd;
+		background-color:#f0c911;
 		-webkit-border-top-left-radius:0px;
 		-moz-border-radius-topleft:0px;
 		border-top-left-radius:0px;
@@ -58,15 +50,15 @@
 		-moz-border-radius-bottomleft:0px;
 		border-bottom-left-radius:0px;
 		text-indent:0px;
-		border:1px solid #000000;
+		border:1px solid #e65f44;
 		display:inline-block;
-		color:#000000;
+		color:#c92200;
 		font-family:Arial;
 		font-size:15px;
 		font-weight:bold;
 		font-style:normal;
 		line-height:35px;
-		text-shadow:1px 0px 0px #ffffff;
+		text-shadow:1px 1px 0px #ded17c;
 		/*end of generated code*/
 	}
 	#banner form input.button{
@@ -76,7 +68,7 @@
 		width:8%;
 		
 		/*generated with a program*/
-		background-color:#dddddd;
+		background-color:#f0c911;
 		-webkit-border-top-left-radius:0px;
 		-moz-border-radius-topleft:0px;
 		border-top-left-radius:0px;
@@ -90,9 +82,9 @@
 		-moz-border-radius-bottomleft:0px;
 		border-bottom-left-radius:0px;
 		text-indent:0px;
-		border:1px solid #000000;
+		border:1px solid #e65f44;
 		display:inline-block;
-		color:#000000;
+		color:#c92200;
 		font-family:Arial;
 		font-size:15px;
 		font-weight:bold;
@@ -100,7 +92,7 @@
 		line-height:35px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:1px 1px 0px #cccccc;
+		text-shadow:1px 1px 0px #ded17c;
 		/*end of generated code*/
 	}
 	div#mainBar{
@@ -110,8 +102,8 @@
 	#mainBar {
 		float:left;
 		width:100%;
-		background:#dddddd;
-		border-bottom:4px solid #666666;
+		background:#f0c911;
+		border-bottom:4px solid #bd9a00;
 		overflow:hidden;
 		position:relative;
 	}
@@ -138,95 +130,33 @@
 		display:block;
 		margin:0 0 0 1px;
 		padding:3px 10px;
-		background:#aaaaaa;
-		color:#000000;
-		border-top:1px solid #000000;
-		border-left:1px solid #000000;
-		border-right:1px solid #000000;
+		background:#e3e07d;
+		color:#000fff;
+		border-top:1px solid #e65f44;
+		border-left:1px solid #e65f44;
+		border-right:1px solid #e65f44;
 		text-decoration:none;
 		line-height:1.3em;
 	}
 	#mainBar ul li a:hover {
-		background:#666666;
-		color:#;
-		border-top:1px solid #000000;
-		border-left:1px solid #000000;
-		border-right:1px solid #000000;
+		background:#369;
+		color:#fff;
+		border-top:1px solid #e65f44;
+		border-left:1px solid #e65f44;
+		border-right:1px solid #e65f44;
 	}
 	#mainBar ul li a.active,
 	#mainBar ul li a.active:hover {
-		color:#aaaaaa;
-		border-top:1px solid #000000;
-		border-left:1px solid #000000;
-		border-right:1px solid #000000;
-		background:#666666;
+		color:#C92200;
+		border-top:1px solid #e65f44;
+		border-left:1px solid #e65f44;
+		border-right:1px solid #e65f44;
+		background:#bd9a00;
 		font-weight:bold;
 	}
-
 	div#text{
 		overflow:hidden;
 		z-index:-1;
-
-
-	}
-	#main{
-		position:absolute;
-		top:+175px;
-		left:+10%;
-		width:90%;
-		overflow:hidden;
-	}
-	#main.box{
-		width:220px;
-		padding:3px;
-		margin:0px;
-		position:relative;
-		top:0px;
-		left:0px;
-		width:90%;
-
-		
-		/*generated with a program*/
-
-		text-indent:0px;
-		border-bottom:1px solid #000000;
-		display:inline-block;
-		color:#000000;
-		font-family:georgia-serif;
-		font-size:80px;
-		font-weight:bold;
-		font-style:normal;
-		line-height:60px;
-		text-decoration:none;
-		text-align:center;
-		text-shadow:0px 0px 0px #ffffff;
-		/*end of generated code*/
-		
-	
-	}
-	#welcome.box{
-		width:220px;
-		padding:3px;
-		margin:0px;
-		position:relative;
-		top:0px;
-		left:0px;
-		width:90%;
-		
-				/*generated with a program*/
-
-		text-indent:0px;
-		border-bottom:1px solid #000000;
-		display:inline-block;
-		color:#000000;
-		font-family:georgia-serif;
-		font-size:15px;
-		font-weight:bold;
-		font-style:normal;
-		line-height:15px;
-		text-decoration:none;
-		text-align:center;
-		text-shadow:0px 0px 0px #ffffff;
 	}
 	#text{
 		position:absolute;
@@ -243,14 +173,14 @@
 		top:0px;
 		left:0px;
 		width:90%;
-
 		
 		/*generated with a program*/
-
+		background-color:#f0c911;
+		border-radius: 5px 5px 5px 5px;
 		text-indent:0px;
-		border-bottom:1px solid #000000;
+		border:1px solid #e65f44;
 		display:inline-block;
-		color:#000000;
+		color:#c92200;
 		font-family:Arial;
 		font-size:15px;
 		font-weight:bold;
@@ -258,10 +188,13 @@
 		line-height:35px;
 		text-decoration:none;
 		text-align:left;
-		text-shadow:0px 0px 0px #ffffff;
+		text-shadow:1px 1px 0px #ded17c;
 		/*end of generated code*/
 		
 	
+	}
+	#text.box form{
+		width:100px;
 	}
 	#text.searchNav{
 		width:220px;
@@ -273,12 +206,12 @@
 		width:90%;
 		
 		/*generated with a program*/
-		
-
+		background-color:#f0c911;
+		border-radius: 5px 5px 5px 5px;
 		text-indent:0px;
-
+		border:1px solid #e65f44;
 		display:inline-block;
-		color:#000000;
+		color:#c92200;
 		font-family:Arial;
 		font-size:15px;
 		font-weight:bold;
@@ -286,11 +219,11 @@
 		line-height:35px;
 		text-decoration:none;
 		text-align:center;
-		text-shadow:0px 0px 0px #ffffff;
+		text-shadow:1px 1px 0px #ded17c;
 		/*end of generated code*/
 	}
 	#text a{
-		color:#000000;
+		color:#c92200;
 		padding:2px;
 	}
 	#text p{
@@ -298,24 +231,6 @@
 		top:0px;
 		left:0px;
 	}
-	
------------------------------------------	
-	#header.box{
-		width:220px;
-		padding:3px;
-		margin:0px;
-		position:relative;
-		top:0px;
-		left:0px;
-		width:90%;
-		
-		font-family:Arial;
-		font-size:15px;
-		font-weight:bold;
-		font-style:normal;
-	}
-----------------------------------------
-
 	
 	/*ignore for now below this point*/
 	.cuerpo{

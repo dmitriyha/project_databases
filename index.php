@@ -10,12 +10,16 @@
 			require('mainBar.php');
 			setTabs(basename(__FILE__));
 		?>
-		<div id="text">
+		<div id="main">
 			
-			<p id="text">
-				<div id="text" class="box">
-					text goes here lol
+			<p id="main">
+				<div id="main" class="box">
+					How was IT?
 				</div>
+				<div id="welcome" class="box">
+				Welcome to How was IT! A website which allows you to rate your favourite books and share your opinion with other users!
+				</div>
+				
 			</p>
 		</div>
 	</body>
