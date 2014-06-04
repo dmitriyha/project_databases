@@ -2,9 +2,9 @@
 	function search($search,$start,$file){
 		$dbh = new PDO('mysql:host='.$GLOBALS ['host'].';dbname='.$GLOBALS ['db'], $GLOBALS ['username'],$GLOBALS['password']);
 		
-		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title");
+		$stmt = $dbh->prepare("SELECT * FROM `book` WHERE `Title` REGEXP :title AND `approved`=1");
 		if($search==null){
-			$stmt = $dbh->prepare("SELECT * FROM `book`");
+			$stmt = $dbh->prepare("SELECT * FROM `book` WHERE approved=1 ");
 		}
 		$stmt->bindParam(':title', $search);
 		$stmt->execute();
@@ -14,9 +14,10 @@
 		$finalResult=$start+10;
 		$pages=ceil($max/10);
 		
+		
 		while($i<$finalResult){
 			$row=$stmt->fetch();
-			if($start<=$i && $finalResult>$i && $i<$max){
+			if($start<=$i && $finalResult>$i && $i<$max ){
 				echo '<div id="text" class="box">';
 				echo '<b>Title: </b>'.$row['Title'].'<br>';
 				echo '<b>Publisher: </b>'.$row['Publisher'].'<br>';
@@ -25,7 +26,9 @@
 				echo '<b>ISBN: </b>'.$row['ISBN'].'<br>';
 				echo '<b>Year: </b>'.$row['Year'].'<br>';
 				echo '<b>Price: </b>'.$row['Price'].' &#8364<br>';
-				echo '<b>Average Raring: </b>'.$row['avgRating'].'<br>';
+				if($row['avgRating']>0){
+					echo '<b>Average Raring: </b>'.$row['avgRating'].'<br>';
+				}
 				echo '<table cellpadding="5" cellspacing="1"><tr><td>';
 				echo '<form name="review" method="post" action="view_Reviews.php">
 					<input name="bookid" type="hidden" id="bookid" value="'.$row['bookid'].'">

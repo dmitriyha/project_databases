@@ -8,12 +8,18 @@
 			session_start(); 
 		
 		
-			if(isset($_SESSION['username']) && ($GLOBALS['page']=='login.php' || $GLOBALS['page']=='register.php')){ 
+			if(isset($_SESSION['username']) && ($GLOBALS['page']=='login.php' || $GLOBALS['page']=='register.php'||$GLOBALS['page']=='users.php'||$GLOBALS['page']=='createAdmin.php')){ 
+				if($_SESSION['type']!='admin' && ($GLOBALS['page']=='users.php'||$GLOBALS['page']=='createAdmin.php')){
+					header("Location: .");
+				}
+				else if($GLOBALS['page']=='login.php' || $GLOBALS['page']=='register.php'){
+					header("Location: ."); //isset check to see if a variables has been 'set' 
+				}
+			}
+			if(!isset($_SESSION['username']) && ($GLOBALS['page']=='review.php'||$GLOBALS['page']=='users.php'||$GLOBALS['page']=='createAdmin.php')){ 
 			   header("Location: ."); //isset check to see if a variables has been 'set' 
 			}
-			if(!isset($_SESSION['username']) && ($GLOBALS['page']=='review.php')){ 
-			   header("Location: ."); //isset check to see if a variables has been 'set' 
-			}
+			
 		?>
 		<?php require('style.css');?>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
