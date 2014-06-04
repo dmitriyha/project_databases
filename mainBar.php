@@ -46,6 +46,12 @@
 				else{
 					echo '<li><a href="createAdmin.php">Create special user</a></li>';
 				}
+				if($file =='users.php'){
+					echo '<li><a href="users.php" class="active">User Control</a></li>';
+				}
+				else{
+					echo '<li><a href="users.php">User Control</a></li>';
+				}
 			}
 			echo '<li><a href="logout.php">Log Out</a></li>';
 			
