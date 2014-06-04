@@ -237,7 +237,7 @@
 	}
 	#text.box{
 		width:220px;
-		padding:3px;
+		padding:20px;
 		margin:0px;
 		position:relative;
 		top:0px;
@@ -248,14 +248,14 @@
 		/*generated with a program*/
 
 		text-indent:0px;
-		border-bottom:1px solid #000000;
+		border-bottom:2px solid #000000;
 		display:inline-block;
 		color:#000000;
 		font-family:Arial;
 		font-size:15px;
 		font-weight:bold;
 		font-style:normal;
-		line-height:35px;
+		line-height:20px;
 		text-decoration:none;
 		text-align:left;
 		text-shadow:0px 0px 0px #ffffff;
