@@ -60,6 +60,9 @@ require('head.php');
 							else if($_GET['error']==2){
 								echo'<td colspan="3"><strong><center>Username or password wrong </center></strong></td>';
 							}
+							else if($_GET['error']==3){
+								echo'<td colspan="3"><strong><center>This user is banned </center></strong></td>';
+							}
 						}
 					?>
 					</table>

@@ -32,9 +32,15 @@ if(isset($_POST['submit']))
 	  echo $row[3];
       if($count == 1){ 
          //YES WE FOUND A MATCH! 
-         $_SESSION['username'] = $user; //Create a session for the user! 
-		 $_SESSION['type']=$row[3];
-		 header("Location: .");
+		 if($row[4]){
+			header("Location: login.php?error=3");
+		 }
+		 else{
+			 $_SESSION['username'] = $user; //Create a session for the user! 
+			 $_SESSION['type']=$row[3];
+			  header("Location: .");
+		 }
+		
       } 
        
       else{ 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2014 at 02:35 PM
+-- Generation Time: Jun 04, 2014 at 03:11 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -54,7 +54,7 @@ INSERT INTO `book` (`bookid`, `ISBN`, `Title`, `Author`, `Category`, `Publisher`
 (6, '0766813916', 'Outdoor Power Equipment (ED Version) 1st edition', 'Jay Webster', 'Automotive', 'Delmar Learning', 2001, 55, 'Designed to assist students in developing the skills required of professionally certified outdoor power equipment technicians, this book features operation, troubleshooting and service information that can be used to maintain and repair commonly used outdoor equipment, including: lawnmowers and garden tractors, snow throwers, leaf blowers and string trimmers, chain saws, and more! Comprehensive in scope, Small Engines for Outdoor Power Equipment begins by acquainting students with shop safety, tools and basic service information. Following exposure to "the big picture" of small engine operation, students are then introduced to the specifics of the ignition system, fuel system, governor and throttle control system, lubrication system, cooling and exhaust system, manual starting system, and the electrical starting and charging system. Both two-stroke and four-stroke engines are covered in detail. Small Engines for Outdoor Power Equipment also features step-by-step photo sequences to illustrate service techniques and provides students with an opportunity to "test" their knowledge by conducting a failure analysis and successfully rebuilding a failed engine.', 'Hardbound with CD', 3),
 (7, '0766838722', 'Electronics for Computer Technology 1st edition', 'David Terrell', 'Electronics', 'Delmar Learning', 2003, 80, 'New from Delmar Learning, Electronics for Computer Technology is perfect for today''s career-minded students as well as anyone with a keen interest in troubleshooting computer devices, components and electrical circuits. The first chapter introduces system-level topics, including representative systems, system notations, functional hierarchies, system connectivity, and system-level troubleshooting. In subsequent chapters, direct references are made to system applications in order to put each topic in the context of an overall system. Some software (programming) topics are addressed, yet emphasis throughout the book is on hardware, including all of the physical parts of the computer plus various electronic components within the computer. Electronic devices are also discussed, along with an overview of digital electronics, computers, and telecommunications. Readers will learn to apply system-level troubleshooting techniques to localize the detailed troubleshooting effort.', 'Softbound with CD', 0),
 (8, '1401890075', 'Technician''s Guide to Programmable Controllers 5th edition', 'Richard Cox', 'Programming', 'Delmar Learning', 2007, 90, 'Hailed as the most comprehensive introduction to PLCs on the market today, this newly updated 5th Edition covers theory, hardware, instructions, programming, installation, startup, and troubleshooting in a way that is easy to understand and apply. New material has been added to explain communication networks, basic control signals, linear scaling of analog process signals, and Proportional Integral Derivative (PID) instructions used by many PLC applications. Supplementary programming examples utilizing the PLC instructions in the book impart a better understanding of the various instructions and how they can be combined to create simple yet effective control logic solutions for today''s world.', 'Softbound without CD', 0),
-(9, '0534493033', 'Introduction to Wireless and Mobile Systems 2nd edition', 'Dharma P. Agrawal & Qing-An Zeng', 'Communication', 'Nelson Engineering', 2006, 80, 'This text explains the general principles of how wireless systems work, how mobility is supported, what is the underlying infrastructure and what interactions are needed among different functional components. Designed as a textbook appropriate for undergraduate or graduate courses in Computer Science, Electrical Engineering, and Electrical and Computer Engineering, it focuses on qualitative descriptions and the realistic explanations of relationships between wireless systems and performance parameters. Rather than offering a thorough history behind the development of wireless technologies or an exhaustive list of work being carried out, the authors help EE and CSE students learn this exciting technology through relevant examples such as understanding how a cell phone starts working as soon as they get out of an airplane', 'Hardbound without CD', 0),
+(9, '0534493033', 'Introduction to Wireless and Mobile Systems 2nd edition', 'Dharma P. Agrawal & Qing-An Zeng', 'Communication', 'Nelson Engineering', 2006, 80, 'This text explains the general principles of how wireless systems work, how mobility is supported, what is the underlying infrastructure and what interactions are needed among different functional components. Designed as a textbook appropriate for undergraduate or graduate courses in Computer Science, Electrical Engineering, and Electrical and Computer Engineering, it focuses on qualitative descriptions and the realistic explanations of relationships between wireless systems and performance parameters. Rather than offering a thorough history behind the development of wireless technologies or an exhaustive list of work being carried out, the authors help EE and CSE students learn this exciting technology through relevant examples such as understanding how a cell phone starts working as soon as they get out of an airplane', 'Hardbound without CD', 4),
 (10, '053495409X', 'Analog and Digital Signal Processing 2e', 'Ashok Ambardar', 'Electronics Engineering', 'Nelson Engineering', 1999, 75, 'Ambardar''s proven text teaches the basic principles and applications of signals, systems, transforms and filters, using both a visual and mathematical approach. This book helps readers develop a thorough understanding of time-domain and frequency-domain relationships, encouraging them to think clearly in both domains and switch easily from one to the other. Bound into each text is a disk with a set of powerful software routines running under MATLAB? that can be used for reinforcing and visualizing concepts as well as for problem solving and advanced design. The extensively revised and reorganized Second Edition incorporates new practical applications and design-oriented examples in every chapter.', 'Softbound', 0),
 (11, '0534952852', 'Mechatronics System Design 1st edition', 'Devdas Shetty & Richard Kolk', 'Mechatronics', 'Nelson Engineering', 1998, 78, 'MECHATRONICS - a synergistic combination of mechanical and electrical engineering, computer science, and information technology-is a rapidly emerging technology appropriate for today''s engineering students and practicing engineers. This book combines the core aspects of mechatronics (system modeling, simulation, sensors, actuation, real-time computer interfacing, and control) with practical industrial applications presented in an opitimal way for understanding this new technology. The book features extensive coverage of the modeling and simulation of physical systems (in Chapter 2) made possible by block-diagrams, the modified analogy approach to modeling, and state-of-the-art visual simulation software. A collection of case studies drawn from a variety of industries (complete with parts, lists, setup, and instructions) supports the authors'' applied, design-oriented approach.', 'Hardbound with CD', 0),
 (12, '1598633600', 'Beginning C++ Through Game Programming 2e', 'Michael Dawson', 'Game Programming', 'Delmar Learning', 2007, 35, 'Beginning C++ Through Game Programming, Second Edition approaches C++ from a game programming perspective unlike any other on the market. Offering a thorough and modern introduction to C++, this book is everything that an aspiring game programmer needs in order to learn the fundamentals of C++ and game programming basics. There is no programming experience necessary. You''ll begin within the fundamental steps of C++ and game programming. The book presents a small, but complete program for each new concept and a complete game program at the end of each chapter. At the end of the book, you''ll create a final game project that combines most of the major topics you''ve just covered. Skillfully written in an easy-to-understand manner, this is a great place to get started with game programming.', 'Softbound with CD', 0),
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `postcode` varchar(7) DEFAULT NULL,
   `city` varchar(9) DEFAULT NULL,
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `members`
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 
 INSERT INTO `members` (`userid`, `Password`, `user`, `user_type`, `banned`, `fname`, `lname`, `address`, `postcode`, `city`) VALUES
 (1, '0000', 'some', 'user', 0, 'Venu', 'Rao', 'Spui 68', '2511 BT', 'Den Haag'),
-(2, '1234', 'some1', 'user', 0, 'Satish', 'Bob', 'Fahrenheitstraat 707', '2561 DE', 'Den Haag'),
+(2, '1234', 'some1', 'user', 1, 'Satish', 'Bob', 'Fahrenheitstraat 707', '2561 DE', 'Den Haag'),
 (3, 'hi', 'someone', 'user', 0, 'Ajay', 'Gonzaga', 'Leyweg 811', '2545 HA', 'Rotterdam'),
 (4, 'random', 'some4', 'user', 0, 'Srinivas', 'Magpantay', 'Theresiastraat 195', '2593 AJ', 'Den Haag'),
 (5, 'password', 'some5', 'user', 0, 'Aditya', 'Gill', 'Linnaeusstraat 2', '2522 GR', 'Den Haag'),
@@ -136,7 +136,11 @@ INSERT INTO `members` (`userid`, `Password`, `user`, `user_type`, `banned`, `fna
 (17, '2', '2', 'user', 0, '2', '2', '2', '2', '2'),
 (18, '3', '3', 'user', 0, '3', '3', '3', '3', '3'),
 (19, '123', 'somestupidname', 'user', 0, 'dima', 'lol', '111', '111', '111'),
-(20, '1234', 'qwerty', 'user', 0, 'qwert', 'y', 'qwertyuuio', 'lsekjrf', 'SLKDF-OLS');
+(20, '1234', 'qwerty', 'user', 0, 'qwert', 'y', 'qwertyuuio', 'lsekjrf', 'SLKDF-OLS'),
+(21, '111', 'sdfg', 'user', 0, 'dfg', 'dfg', '111', '111', '111'),
+(22, 'admin', 'admin', 'admin', 0, 'admin', 'admin', 'admin', 'admin', 'admin'),
+(23, '123', '123', 'admin', 0, '123', '123', '123', '123', '123'),
+(24, 'pub', 'pub', 'pub', 0, 'pub', 'pub', 'pub', 'pub', 'pub');
 
 -- --------------------------------------------------------
 
@@ -151,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `review` (
   `Review` varchar(138) DEFAULT NULL,
   `rating` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`reviewid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `review`
@@ -182,7 +186,8 @@ INSERT INTO `review` (`reviewid`, `bookid`, `userid`, `Review`, `rating`) VALUES
 (25, 23, 1, 'dfgdfgdfgdfg', 5),
 (27, 35, 1, 'dfsfsdfdsfsdfsdfsdf', 2),
 (28, 10, 1, 'sdfsdf', 5),
-(29, 6, 1, 'asdasdasdasd', 1);
+(29, 6, 1, 'asdasdasdasd', 1),
+(30, 9, 1, 'dsfksdfjsd', 5);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
