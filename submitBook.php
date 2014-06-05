@@ -24,7 +24,7 @@
 				$stmt->bindParam(':description',$_POST['description']);
 				$stmt->execute();
 				header("location: book.php?success=1");
-			}else{header("location: book.php?error=1")};
+			}else{ header("location: book.php?error=1");}
 		} 
 		
 		else{header("location: ."); }
