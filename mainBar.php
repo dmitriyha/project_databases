@@ -52,6 +52,20 @@
 				else{
 					echo '<li><a href="users.php">User Control</a></li>';
 				}
+				if($file =='approve_Book.php'){
+					echo '<li><a href="approve_Book.php?start=0" class="active">Approve Books</a></li>';
+				}
+				else{
+					echo '<li><a href="approve_Book.php?start=0">Approve Books</a></li>';
+				}
+			}
+			else if($_SESSION['type']=="pub"){
+				if($file =='book.php'){
+					echo '<li><a href="book.php" class="active">Submit a book</a></li>';
+				}
+				else{
+					echo '<li><a href="book.php">Submit a book</a></li>';
+				}
 			}
 			echo '<li><a href="logout.php">Log Out</a></li>';
 			

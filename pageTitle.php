@@ -2,10 +2,10 @@
 	function setTitle($file){
 		echo '<title>';
 		if($file == 'index.php'){
-			echo 'Home - Review-a-book';
+			echo 'Home - How was IT?';
 		}
 		else{
-			echo str_replace("_"," ",ucfirst(substr($file, 0, strpos($file, ".")))).' - Review-a-book';
+			echo str_replace("_"," ",ucfirst(substr($file, 0, strpos($file, ".")))).' - How was IT?';
 		}
 		echo '</title>';
 	}
