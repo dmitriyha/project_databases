@@ -34,6 +34,7 @@
 			where bookid=:bookid"); 
 			$stmt->bindParam(':bookid',$_POST['bookid']);
 			$stmt->execute();
+			header("location: review.php");
 		}
 		else{header("location: review.php?error=1"); }
 	} 
